@@ -30,6 +30,15 @@
         </div>
     </nav>
 
+        <h1>WINGS & BEERS</h1>
+        <h2>CHICKEN JOINT</h2>
+        <button type="button" class="button">login now</button>
+    </div>
+
+    <div class="chicken">
+        <img src="img/chicken.png" alt="chicken">
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>

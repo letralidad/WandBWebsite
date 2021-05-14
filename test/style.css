@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color:#ffc530;
+    /*
+    background-image: url("img/chicken.png");
+    background-repeat: no-repeat;
+    background-position: right;*/
+
 }
 nav{
     padding-top: 2%;
@@ -88,6 +93,8 @@ nav{
         display: block;
     }
 
+    
+
 }
 
 .nav-active{
@@ -115,7 +122,106 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/*nav-ok-na
-h1, h2, button and pic ni chicken na lang kulang
+.col{
+	flex-basis: 50%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
 
-*/
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    color: #111111;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: .5em;
+    margin-left: .50%;
+    color: #111111;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    padding: .8em 2.3em;
+    border-radius: 2em;
+    border: none;
+    margin-top: 1em;
+    font-size: 13px;
+    font-weight: 400 italic;
+    box-shadow: 0px 3px#707070;
+}
+
+button:hover{
+    background-color: #111111;
+	color: #ffc530;
+    font-weight: 500;
+}
+
+.chicken{
+    position: absolute;
+    z-index: -1;
+    bottom: 22%;
+	right: 24%;
+}
+
+.chicken img{
+    width: 130%;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 60%;
+    }
+    .col{
+        margin-top: 10%;
+        margin-left: 9%;
+    }
+    .chicken{
+        bottom: 20%;
+        right: 13%;
+    }
+    .chicken img{
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .col{
+        margin-top: 30%;
+    }
+    h1{
+        text-align: center; 
+        font-size: 40px;
+        margin: 0 25px 0 0;
+    }
+    h2{
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: .5em;
+        margin-right: 10px;
+    }
+    button{
+        margin-top: 2%;
+        margin-left: 35%;
+        font-size: 11px;
+    }
+    .chicken{
+        bottom: 20%;
+        right: 13%;
+    }
+    .chicken img{
+        width: 110%;
+        opacity: 80%;
+    }
+    button:hover{
+        background-color: #111111;
+        color: #ffc530;
+        font-weight: 500;
+    }
+    
+
+}

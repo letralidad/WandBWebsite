@@ -114,7 +114,31 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
+section .contentBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+section .contentBox .formBox
+{
+    width: 100%;
+}
+section .contentBox .formBox h2
+{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform:uppercase;
+    margin-bottom:20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+h2
+{
+    font-weight: 600;
+}
 /*nav-ok-na
 h1, h2, button and pic ni chicken na lang kulang
 

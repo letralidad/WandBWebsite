@@ -91,6 +91,12 @@ a
    background-color:#fcd062;
    border-radius: 15px;
 }
+@media screen and (max-width:450px) {
+    .contentBox .formBox
+    {
+        width: 80%;
+    }
+}
 
 
 

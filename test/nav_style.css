@@ -4,16 +4,7 @@
     box-sizing: border-box;
 }
 body{
-<<<<<<< HEAD:test/about_style.css
-    background-color:#ffc530;
-    /*
-    background-image: url("img/chicken.png");
-    background-repeat: no-repeat;
-    background-position: right;*/
-
-=======
     background-color: white;
->>>>>>> branch-for-keano:test/nav_style.css
 }
 nav{
     padding-top: 2%;
@@ -97,11 +88,6 @@ nav{
         display: block;
     }
 
-<<<<<<< HEAD:test/about_style.css
-    
-
-=======
->>>>>>> branch-for-keano:test/nav_style.css
 }
 
 .nav-active{

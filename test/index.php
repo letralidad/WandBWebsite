@@ -21,7 +21,7 @@
             <li><a href="index.php">HOME</a></li>
             <li><a href="#">MENU</a></li>
             <li><a href="#">ABOUT</a></li>
-            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="login.php">MY ACCOUNT</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -33,7 +33,11 @@
     <div class="col">
         <h1>WINGS & BEERS</h1>
         <h2>CHICKEN JOINT</h2>
-        <button type="button" class="button">login now</button>
+        <a href="login.php">
+            <button type="button" class="button">
+                login now
+            </button>
+        </a>
     </div>
 
     <div class="chicken">

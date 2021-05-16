@@ -35,6 +35,21 @@ nav{
     font-weight: 600;
     font-size: 15px;
 }
+
+.button_home{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;;
+    border: solid 2px #111111;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 1px 5px 1px 5px;
+    color: #ffc530;
+    box-shadow: 1px 3px #0000001f;
+}
+
 .nav-links a:hover{
     font-family: 'Montserrat', sans-serif;
     color:  #111111;
@@ -87,7 +102,6 @@ nav{
     .burger{
         display: block;
     }
-
 }
 
 .nav-active{
@@ -114,12 +128,3 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
-<<<<<<< HEAD:test/about_style.css
-=======
-
-
-/*nav-ok-na
-h1, h2, button and pic ni chicken na lang kulang
-
-*/
->>>>>>> branch-for-keano:test/nav_style.css

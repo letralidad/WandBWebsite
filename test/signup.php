@@ -20,9 +20,9 @@
 
         <ul class="nav-links">
             <li><a href="index.php">HOME</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="login.php">MY ACCOUNT</a></li>
+            <li><a href="menu.php">MENU</a></li>
+            <li><a href="about.php">ABOUT</a></li>
+            <li><a href="login.php"><button type="button" class="button_home">MY ACCOUNT</button></a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>

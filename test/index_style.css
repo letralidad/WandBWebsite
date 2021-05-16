@@ -5,11 +5,6 @@
 }
 body{
     background-color:#ffc530;
-    /*
-    background-image: url("img/chicken.png");
-    background-repeat: no-repeat;
-    background-position: right;*/
-
 }
 nav{
     padding-top: 2%;
@@ -107,9 +102,6 @@ nav{
     .burger{
         display: block;
     }
-
-    
-
 }
 
 .nav-active{

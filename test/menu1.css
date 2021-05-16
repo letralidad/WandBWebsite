@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#ffc530;
-    /*
-    background-image: url("img/chicken.png");
-    background-repeat: no-repeat;
-    background-position: right;*/
-
+    background-color:#FFFCF5;
 }
 nav{
     padding-top: 2%;
@@ -41,7 +36,7 @@ nav{
     font-size: 15px;
 }
 
-.button_home{
+.button_menu{
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 600;
@@ -52,12 +47,11 @@ nav{
     background-color: #111111;
     padding: 1px 5px 1px 5px;
     color: #ffc530;
-    box-shadow: 1px 3px #0000001f;
+    box-shadow: 1px 3px #00000036;
 }
-
 .nav-links a:hover{
     font-family: 'Montserrat', sans-serif;
-    color:  #111111;
+    color: #111111;
     text-decoration: none;
     letter-spacing: 1px;    
     font-weight: 700;
@@ -66,6 +60,7 @@ nav{
 .nav-links li{
     list-style: none;
 }
+
 .burger{
     display: none;
     cursor: pointer;
@@ -93,7 +88,7 @@ nav{
         right: 0px;
         height: 92vh;
         top: 10vh;
-        background-color:#ffc530;
+        background-color: #ffc530;
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -137,106 +132,98 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.col{
-	flex-basis: 50%;
-    margin-top: 5%;
-    margin-left: 15%;
-}
-
 h1{
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
     font-weight: 800;
-    color: #111111;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    text-align: center;
+    letter-spacing: -2px;
 }
 
-h2{
+.menu{
+    display: inline-block;
+    margin: .5% 25%;
+}
+
+.prod{
+    width: 26%;
+    margin: 20px;
+    box-shadow: 6px 8px #00000080;
+}
+
+.order{
+    position: relative;
+    left: 45%;
+    background-color: #FF3030;
+    color: #FFFCF5;
     font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    font-weight: 500;
-    letter-spacing: .5em;
-    margin-left: .50%;
-    color: #111111;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px 21px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
-.button2{
-    font-family: 'Montserrat', sans-serif;
-    padding: .8em 2.3em;
-    border-radius: 2em;
-    border: none;
-    margin-top: 1em;
-    font-size: 13px;
-    font-weight: 400 italic;
-    box-shadow: 0px 3px#707070;
-}
-
-.button2:hover{
+.order:hover{
     background-color: #111111;
-	color: #ffc530;
     font-weight: 500;
+    color: #ffc530;
+
 }
 
-.chicken{
-    position: absolute;
-    z-index: -1;
-    bottom: 22%;
-	right: 24%;
-}
-
-.chicken img{
-    width: 130%;
+.whitespace{
+    background-color: #FFFCF5;
+    width: 100%;
+    height: 10vh;
 }
 
 @media screen and (max-width:1024px) {
-    .nav-links{
-        width: 60%;
+    h1{
+        font-size: 35px;
+        font-family: 'Montserrat', sans-serif;
     }
-    .col{
-        margin-top: 10%;
-        margin-left: 9%;
+    .menu{
+        margin: .5% 20%;
     }
-    .chicken{
-        bottom: 20%;
-        right: 13%;
+    .prod{
+        width: 24%;
     }
-    .chicken img{
-        width: 110%;
+    .order{
+        left: 43%;
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width:1114px) {
+    .menu{
+        margin: .5% 20%;
+    }
+    .order{
+        left: 44%;
+        font-size: 13px;
+        padding: 10px 20px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .col{
-        margin-top: 30%;
-    }
     h1{
-        text-align: center; 
-        font-size: 40px;
-        margin: 0 25px 0 0;
-    }
-    h2{
+        margin-right: 0;
         text-align: center;
-        font-size: 20px;
-        letter-spacing: .5em;
-        margin-right: 10px;
+        font-size: 30px;
     }
-    .button2{
-        margin-top: 2%;
-        margin-left: 35%;
-        font-size: 11px;
+    .menu{
+        margin: .5% 15%;
     }
-    .chicken{
-        bottom: 20%;
-        right: 13%;
+    .prod{
+        width: 35%;
     }
-    .chicken img{
-        width: 110%;
-        opacity: 80%;
-    }
-    .button2:hover{
-        background-color: #111111;
-        color: #ffc530;
-        font-weight: 500;
+    .order{
+        left: 38%;
+        font-size: 12px;
+        padding: 10px 20px;
     }
     
-
 }

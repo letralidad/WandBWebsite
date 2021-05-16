@@ -21,7 +21,7 @@
             <li><a href="index.php">HOME</a></li>
             <li><a href="menu.php"><button type="button" class="button_menu">MENU</button></a></li>
             <li><a href="about.php">ABOUT</a></li>
-            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="login.php">MY ACCOUNT</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -40,7 +40,7 @@
         <img src="img/6.jpg" class="prod" alt="">
     </div>
 
-    <a href="account.php" class="order">order now?</a>
+    <a href="login.php" class="order">order now?</a>
 
     <div class="whitespace"></div>
     <script src="app.js"></script>

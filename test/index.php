@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W&B - Home</title>
+    <title>W&B</title>
     <link rel="stylesheet" type="text/css" href="index_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/Logo.ico"/> 
@@ -18,9 +18,9 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="index.php"><button type="button" class="button_home">HOME</button></a></li>
-            <li><a href="menu.php">MENU</a></li>
-            <li><a href="about.php">ABOUT</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">ABOUT</a></li>
             <li><a href="#">MY ACCOUNT</a></li>
         </ul>
         <div class="burger">
@@ -33,7 +33,7 @@
     <div class="col">
         <h1>WINGS & BEERS</h1>
         <h2>CHICKEN JOINT</h2>
-        <a href="#"><button type="button" class="button2">login now</button></a>
+        <button type="button" class="button">login now</button>
     </div>
 
     <div class="chicken">

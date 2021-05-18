@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color:#FFFCF5;
 }
 nav{
     padding-top: 2%;
@@ -36,7 +36,7 @@ nav{
     font-size: 15px;
 }
 
-.button_home{
+.button_menu{
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 600;
@@ -47,12 +47,11 @@ nav{
     background-color: #111111;
     padding: 1px 5px 1px 5px;
     color: #ffc530;
-    box-shadow: 1px 3px #0000001f;
+    box-shadow: 1px 3px #00000036;
 }
-
 .nav-links a:hover{
     font-family: 'Montserrat', sans-serif;
-    color:  #111111;
+    color: #111111;
     text-decoration: none;
     letter-spacing: 1px;    
     font-weight: 700;
@@ -61,6 +60,7 @@ nav{
 .nav-links li{
     list-style: none;
 }
+
 .burger{
     display: none;
     cursor: pointer;
@@ -76,6 +76,7 @@ nav{
 @media screen and (max-width:1024px) {
     .nav-links{
         width: 60%;
+        z-index: 1;
     }
 }
 
@@ -86,14 +87,15 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 98vh;
         top: 10vh;
-        background-color:#ffc530;
+        background-color: #ffc530;
         flex-direction: column;
         align-items: center;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 1;
     }
 
     .nav-links li{
@@ -102,6 +104,9 @@ nav{
     .burger{
         display: block;
     }
+
+    
+
 }
 
 .nav-active{

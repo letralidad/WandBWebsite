@@ -22,7 +22,7 @@
             <li><a href="index.php">HOME</a></li>
             <li><a href="menu.php"><button type="button" class="button_menu">MENU</button></a></li>
             <li><a href="about.php">ABOUT</a></li>
-            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="login.php">MY ACCOUNT</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>

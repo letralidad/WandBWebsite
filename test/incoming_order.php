@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>W&B - Incoming Order</title>
     <link rel="stylesheet" type="text/css" href="style/incoming_style.css">
+    <link rel="stylesheet" type="text/css" href="style/table-design.css">
     <link rel="stylesheet" type="text/css" href="style/nav_s.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/Logo.ico"/> 
@@ -39,10 +40,62 @@
         <a href="history_order.php">History of Orders</a>
         <a href="index.php">Logout</a>
     </div>
+
+    <div class="view-note">
+        <p ><i><b>Note: </b>Admin Panel is best in Desktop View</i></p>
+    </div>
+    
     <!--content-->
     <div class="content">
         <h2>Tracking Order</h2><hr>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+        <!--Content of Table-->
+        <?php 
+            include "include/dbcon.php";
+            $result = $dbOrdersconn->query("SELECT * from active WHERE orderstatus='waiting'") or die($dbOrdersconn->error);
+        ?>
+
+        
+        <div class="table">
+            <table class="table-content">
+                <thead>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Date of Order</th>
+                        <th>Total Price</th>
+                        <th>User Ordered</th>
+                        <th>Order Status</th>
+                    </tr>
+                </thead>
+
+            <?php 
+                if ($result->num_rows > 0){
+                    
+                    while($row=$result->fetch_assoc()): ?>
+                        <tr>
+                            <td><?php echo $row['ordernum']; ?></td>
+                            <td><?php echo $row['orderdate']; ?></td>
+                            <td><?php echo $row['totalprice']; ?></td>
+                            <td><?php echo $row['userordered']; ?></td>
+                            <td><?php echo $row['orderstatus']; ?></td>
+                        </tr>
+
+                
+            <?php
+                    endwhile; 
+                }else{?>
+                        <tr>
+                            <td colspan=5 style="font-size:20px; height: 90px;">
+                                <i>
+                                    No incoming orders at the moment!
+                                <i>
+                            </td>
+                        </tr>
+                <?php
+                }?>
+            
+            </table>
+        </div>
     </div>
 
 

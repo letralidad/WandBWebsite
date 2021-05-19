@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 65%;
+    height: 50vh;
+    margin-top: 5%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    border-radius: 25px;
+    box-shadow: 5px 10px #00000057;
+}
+.order_now{
+    float: left;
+    width: 64%;
+    margin-right: 0 31% 0 1%;
+    height: 25vh;
+    border-radius: 25px 0 0 0;
+    background-color: #111111;
+    cursor: pointer;
+}
+
+.order_now h3{
+    color: #FFFCF5;
+    text-align: left;
+    margin-top: 15%;
+    margin-left: 3%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.order_now h4{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #FFFCF5;
+    color: #111111;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.order_now:hover{
+    cursor: pointer;
+    border: solid 3px #ffc530;
+}
+
+.track{
+    float: right;
+    width: 34%;
+    height: 25vh;
+    border-radius: 0 25px 0 0;
+    background-color: #ffc530;
+    cursor: pointer;
+}
+
+.track h3{
+    color: #111111;
+    text-align: left;
+    margin-top: 28%;
+    margin-left: 5%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.track h4{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #FFFCF5;
+    color: #111111;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.track:hover{
+    cursor: pointer;
+    border: solid 3px #111111;
+}
+
+.history{
+    float: left;
+    width: 34%;
+    margin-right: 1%;
+    margin-top: 1.2%;
+    height: 23vh;
+    border-radius: 0 0 0 25px;
+    background-color: #ffc530;
+    cursor: pointer;
+}
+
+.history h3{
+    color: #111111;
+    text-align: left;
+    margin-top: 28%;
+    margin-left: 5%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.history a{
+    text-decoration: none;
+}
+
+.history h4{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #FFFCF5;
+    color: #111111;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.history:hover{
+    cursor: pointer;
+    border: solid 3px #111111;
+}
+
+.account_management{
+    float: right;
+    width: 64%;
+    height: 23vh;
+    margin-top: 1.2%;
+    border-radius: 0 0 25px 0;
+    background-color: #111111;
+    cursor: pointer;
+}
+.account_management h3{
+    color: #FFFCF5;
+    text-align: right;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.account_management h4{
+    float: right;
+    padding: 5px 10px;
+    background-color: #FFFCF5;
+    color: #111111;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-left: 31%;
+}
+.account_management:hover{
+    cursor: pointer;
+    border: solid 3px #ffc530;
+}
+
+@media screen and (max-width: 1060px) {
+    .container{width: 70%;margin-left: 15%;margin-right: 15%;margin-top: 10%;}
+}
+@media screen and (max-width: 959px) {
+    .container{width: 80%;margin-left: 10%;margin-right: 10%;margin-top: 10%;}
+}
+@media screen and (max-width: 840px) {
+    .container{width: 90%;margin-left: 5%;margin-right: 5%;margin-top: 10%;}
+}
+@media screen and (max-width: 840px) {
+    .container{width: 95%;margin-left: 2.5%;margin-right: 2.5%;margin-top: 10%;}
+}
+
+@media screen and (max-width: 360px) {
+    .container{width: 100%;margin-top: 10%;}
+    .history h4{font-size: 10px;}
+}
+@media screen and (max-width: 320px) {
+    .container{width: 90%;margin-left: 5%;margin-right: 5%;margin-top: 10%;}
+    .order_now h3{font-size: 10px;}
+    .order_now h4{padding: 3px 7px; font-size: 8px;}
+    .track h3{font-size: 10px;}
+    .track h4{padding: 3px 7px; font-size: 8px;}
+    .history h3{font-size: 10px;}
+    .history h4{padding: 3px 7px; font-size: 8px;}
+    .account_management h3{font-size: 10px;}
+    .account_management h4{padding: 3px 7px; font-size: 8px;}
+    
+}
+
+.button_account{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;;
+    border: solid 2px #111111;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 1px 5px 1px 5px;
+    color: #ffc530;
+    box-shadow: 1px 3px #00000036;
+  }

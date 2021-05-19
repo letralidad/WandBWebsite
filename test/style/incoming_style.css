@@ -44,7 +44,7 @@
   background-color: #1111112a;
   color: #FFFCF5;
 }
-  
+
 div.content {
     margin-left: 200px;
     padding: 10px 16px;
@@ -58,17 +58,13 @@ div.content {
     padding: 15px 0;
     text-align: center;
 }
+
 hr{
     background-color: rgba(0, 0, 0, 0.116);
     padding: 1px;
     margin-bottom: 5px;
 }
 
-.content p{
-    font-size: 15px;
-    font-weight: 400;
-}
-  
 @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;

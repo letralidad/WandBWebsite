@@ -37,7 +37,7 @@
             <h2>Welcome</h2>
             <p>Log in now to find the best deals in town</p>
             <div class="inputBox">
-                <input type="text" name="" placeholder="username">
+                <input type="text" name="" placeholder="E-mail">
             </div>
             <div class="inputBox">
                 <input type="password" name="" placeholder="password">

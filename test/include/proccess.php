@@ -31,7 +31,7 @@ if(isset($_POST['signup'])){
         if(empty($password)){
             header("Location: ../signup.php?error=password");
             exit();
-        }
+        } 
 
         $sql = "INSERT INTO usertable(firstname,lastname,mobilenumber,address,email,userpass) VALUES('$firstname','$lastname','$mobilenumber','$address','$email','$password');";
         $result = mysqli_query($conn, $sql);

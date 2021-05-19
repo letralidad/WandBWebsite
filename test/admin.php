@@ -33,13 +33,24 @@
 
     <!--Side bar-->
     <div class="sidebar">
-        <a class="admin" href="admin.php">Hi Admin!</a>
+        <h1>Hi Admin!</h1>
         <a href="incoming_order.php">Incoming Order</a>
         <a href="current_order.php">Current Order</a>
         <a href="history_order.php">History of Orders</a>
         <a href="index.php">Logout</a>
     </div>
 
+    <!--content-->
+    <div class="content">
+        <div class="col">
+            <h1>WINGS & BEERS</h1>
+            <h2>CHICKEN JOINT</h2>
+        </div>
+        
+        <div class="chicken">
+            <img src="img/chicken.png" alt="chicken">
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

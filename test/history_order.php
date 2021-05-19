@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>W&B - History of Order</title>
-    <link rel="stylesheet" type="text/css" href="style/history_order.css">
+    <link rel="stylesheet" type="text/css" href="style/history_style.css">
     <link rel="stylesheet" type="text/css" href="style/nav_s.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/Logo.ico"/> 
@@ -33,7 +33,7 @@
 
     <!--Side bar-->
     <div class="sidebar">
-        <a href="admin.php">Hi Admin!</a>
+        <h1>Hi Admin!</h1>
         <a href="incoming_order.php">Incoming Order</a>
         <a href="current_order.php">Current Order</a>
         <a class = "history"  href="history_order.php">History of Orders</a>

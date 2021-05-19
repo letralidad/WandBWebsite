@@ -24,7 +24,15 @@
     font-weight: 600;
     font-size: 15px;
   }
-
+.sidebar h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffc530;
+    background-color: #111111;
+    padding: 16px;
+}
 
 .sidebar a:hover:not(.active) {
     background-color: #1111112a;
@@ -33,9 +41,8 @@
 
 
 .sidebar .incoming{
-    background-color: #111111;
-    color: #ffc530;
-    font-size: 14px;
+  background-color: #1111112a;
+  color: #FFFCF5;
 }
   
 div.content {

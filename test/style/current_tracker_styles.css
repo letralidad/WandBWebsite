@@ -38,12 +38,11 @@
     color: #FFFCF5;
   }
 
-.sidebar .history{
-    background-color: #111111;
-    color: #ffc530;
+.sidebar .current_tracker{
+    background-color: #1111112a;
+    color: #FFFCF5;
 }
 
-  
 div.content {
     margin-left: 200px;
     padding: 10px 16px;
@@ -59,7 +58,7 @@ div.content {
 hr{
     background-color: rgba(0, 0, 0, 0.116);
     padding: 1px;
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
 }
 
 .content p{

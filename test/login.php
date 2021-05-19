@@ -32,25 +32,44 @@
     </nav>
 
     <!-- Login form -->
-    <div class="contentBox">
-        <div class="formBox">
-            <h2>Welcome</h2>
-            <p>Log in now to find the best deals in town</p>
-            <div class="inputBox">
-                <input type="text" name="" placeholder="E-mail">
-            </div>
-            <div class="inputBox">
-                <input type="password" name="" placeholder="password">
-            </div>
-            <div class="forgot">
-                <a href="#"><label>forgot password?</label></a>
-            </div>
-            <div class="ssBox">
-                <input type="submit" value="Sign In" name="">
-                <a href="signup.php"><button type="button">Sign Up</button></a>
+    <form action="include/loginprocess.php" method="post">
+        <div class="contentBox">
+        <?php
+            if(isset($_GET['error'])){
+                $error = $_GET['error'];
+                if($error == 'email'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'password'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'click'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'incorrect'){
+                    echo "<script>alert('Username or password are invalid');</script>";
+                }
+            }
+        ?>
+            <div class="formBox">
+                <h2>Welcome</h2>
+                <p>Log in now to find the best deals in town</p>
+                <div class="inputBox">
+                    <input type="text" name="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="forgot">
+                    <a href="#"><label>forgot password?</label></a>
+                </div>
+                <div class="ssBox">
+                    <input type="submit" value="Sign In" name="signin">
+                    <a href="signup.php"><button type="button">Sign Up</button></a>
+                </div>
             </div>
         </div>
-    </div>
+    </form>
     <script src="app.js"></script>
 </body>
 </html>

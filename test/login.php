@@ -32,7 +32,6 @@
     </nav>
 
     <!-- Login form -->
-<<<<<<< HEAD
     <form action="include/loginprocess.php" method="post">
         <div class="contentBox">
         <?php
@@ -68,27 +67,9 @@
                     <input type="submit" value="Sign In" name="signin">
                     <a href="signup.php"><button type="button">Sign Up</button></a>
                 </div>
-=======
-    <div class="contentBox">
-        <div class="formBox">
-            <h2>Welcome</h2>
-            <p>Log in now to find the best deals in town</p>
-            <div class="inputBox">
-                <input type="text" name="" placeholder="E-mail">
-            </div>
-            <div class="inputBox">
-                <input type="password" name="" placeholder="password">
-            </div>
-            <div class="forgot">
-                <a href="#"><label>forgot password?</label></a>
-            </div>
-            <div class="ssBox">
-                <input type="submit" value="Sign In" name="">
-                <a href="signup.php"><button type="button">Sign Up</button></a>
->>>>>>> b70e1d23c205d8b59da8f2a0054467b361f53097
             </div>
         </div>
-    </form>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

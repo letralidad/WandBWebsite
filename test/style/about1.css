@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#FFFCF5;
+    /*
+    background-image: url("img/chicken.png");
+    background-repeat: no-repeat;
+    background-position: right;*/
+
+}
+nav{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #FFFCF5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    width: 70px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links a{
+    font-family: 'Montserrat', sans-serif;
+    color: #111111;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.button_about{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;;
+    border: solid 2px #111111;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 1px 5px 1px 5px;
+    color: #ffc530;
+    box-shadow: 1px 3px #00000036;
+}
+.nav-links a:hover{
+    font-family: 'Montserrat', sans-serif;
+    color:  #ffc530;
+    text-decoration: none;
+    letter-spacing: 1px;    
+    font-weight: 700;
+    font-size: 15px;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #111111;
+    margin: 5px;
+    transition:all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 10vh;
+        background-color: #FFFCF5;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+} 
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.col{
+	flex-basis: 50%;
+    margin-top: 5%;
+    margin-right: 16%;
+    margin-left: 25%;
+}
+
+h1{
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    color: #111111;
+}
+
+h2{
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: .5em;
+    margin-left: .50%;
+    color: #111111;
+}
+
+p{
+    
+    margin-top: 7px;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.chicken{
+    position: absolute;
+    z-index: -1;
+    bottom: 30%;
+	right: 56%;
+}
+
+.chicken img{
+    width: 130%;
+    opacity: 40%;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width: 60%;
+    }
+    .col{
+        flex-basis: 50%;
+        margin-top: 8%;
+        margin-right: 13%;
+        margin-left: 20%;
+    }
+    .chicken{
+        bottom: 30%;
+	    right: 56%;
+    }
+    .chicken img{
+        margin-left: 10%;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .col{
+        flex-basis: 50%;
+        margin-top: 10%;
+        margin-right: 18%;
+        margin-left: 20%;
+    }
+    
+    h1{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        color: #111111;
+    }
+    
+    h2{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: .5em;
+        margin-left: .50%;
+        color: #111111;
+    }
+    
+    p{
+        
+        margin-top: 7px;
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    
+    }
+    .chicken{
+        margin-right: 40px;
+        bottom: 20%;
+        right: 13%;
+    }
+    .chicken img{
+        width: 110%;
+        opacity: 40%;
+    }
+}
+

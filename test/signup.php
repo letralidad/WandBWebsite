@@ -31,34 +31,61 @@
         </div>
     </nav>
     <!-- sign up form -->
-    <div class="contentBox">
-        <div class="formBox">
+    <?php require "include/dbcon.php";?>
+    <div  class="contentBox">
+        <?php
+            if(isset($_GET['error'])){
+                $error = $_GET['error'];
+                if($error == 'firstname'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'lastname'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'mobile number'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'address'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'email'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'password'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+                elseif($error == 'click'){
+                    echo "<script>alert('Enter all the required fields');</script>";
+                }
+            }
+        ?>
+        <form action="include/proccess.php" method="post" class="formBox">
             <div class="textbx">
                 <h2>Sign Up</h2>
                 <p>Let's get started!</p>
             </div>
             <div class="inputBox">
-                <input type="text" name="" placeholder="firstname">
+                <input type="text" name="firstname" placeholder="firstname" require>
             </div>
             <div class="inputBox">
-                <input type="text" name="" placeholder="lastname">
+                <input type="text" name="lastname" placeholder="lastname" require>
             </div>
             <div class="inputBox">
-                <input type="tel" name="" placeholder="mobilenumber">
+                <input type="tel" name="mobilenumber" placeholder="mobilenumber" require>
             </div>
             <div class="inputBox">
-                <input type="text" name="" placeholder="address">
+                <input type="text" name="address" placeholder="address" require>
             </div>
             <div class="inputBox">
-                <input type="password" name="" placeholder="password">
+                <input type="email" name="email" placeholder="Email" require>
             </div>
             <div class="inputBox">
-                <input type="password" name="" placeholder="confirm password">
+                <input type="password" name="password" placeholder="password" require>
             </div>
             <div class="ssBox">
-                <a href="login.php"><button type="button">Sign Up</button></a>
+            <a href="login.php"><button type="submit" name="signup">Sign Up</button></a>
             </div>
-        </div>
+        </form>
     </div>
     <script src="app.js"></script>
 </body>

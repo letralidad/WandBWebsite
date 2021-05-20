@@ -38,7 +38,7 @@
         <a class = "incoming" href="incoming_order.php">Incoming Order</a>
         <a href="current_order.php">Current Order</a>
         <a href="history_order.php">History of Orders</a>
-        <a href="index.php">Logout</a>
+        <a href="include/logout.php">Logout</a>
     </div>
 
     <div class="view-note">

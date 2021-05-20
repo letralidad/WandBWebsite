@@ -38,7 +38,7 @@
         <a href="track_your_order.php">Track your order</a>
         <a href="history_user.php">Order History</a>
         <a class = "acc" href="acc_management.php">Account Management</a>
-        <a href="index.php">Logout</a>
+        <a href="include/logout.php">Logout</a>
     </div>
 
     <!--content-->

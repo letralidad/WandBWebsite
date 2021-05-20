@@ -37,7 +37,7 @@
         <a href="incoming_tracker.php">Incoming Order</a>
         <a href="current_tracker.php">Current Order</a>
         <a class = "history_tracker"  href="history_tracker.php">History of Orders</a>
-        <a href="index.php">Logout</a>
+        <a href="include/logout.php">Logout</a>
     </div>
     <!--content-->
     <div class="content">

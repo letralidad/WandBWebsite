@@ -32,12 +32,20 @@ if(isset($_POST['signup'])){
             header("Location: ../signup.php?error=password");
             exit();
         } 
-
         $hashpass = password_hash($password, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO usertable(firstname,lastname,mobilenumber,address,email,userpass) VALUES('$firstname','$lastname','$mobilenumber','$address','$email','$hashpass');";
         $result = mysqli_query($conn, $sql);
-        if($result)
+        $getId = mysqli_insert_id($conn);
+        $tablename = "ac" . strval($getId);
+        $c_user_table = "CREATE TABLE $tablename ( 
+            itemcode VARCHAR(100) NOT NULL, 
+            itemname VARCHAR(100) NOT NULL, 
+            price DECIMAL(9,2) NOT NULL, 
+            qty DECIMAL(9,2) NOT NULL, 
+            amount DECIMAL(9,2) NOT NULL);";
+        $usertableresult = mysqli_query($dbAddtoCartconn, $c_user_table);
+        if($result && $usertableresult)
         {
             echo "<script>alert('Record has been saved!');</script>";
             header("Location: ../login.php");

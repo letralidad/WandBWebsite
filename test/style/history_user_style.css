@@ -46,7 +46,7 @@
   }
   
   div.content {
-    margin-left: 200px;
+    margin-left: 15%;
     padding: 10px 16px;
     height: auto;
   }
@@ -63,12 +63,14 @@
     padding: 1px;
     margin-bottom: 5px;
   }
-  
   .content p{
     font-size: 15px;
     font-weight: 400;
   }
   
+  .table th,　.table td{
+      width:33.3%;
+  }
   @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;

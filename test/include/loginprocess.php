@@ -30,13 +30,22 @@
             if($resultcheck > 0){
                 while($row = mysqli_fetch_assoc($result)){
                     $hashpass = $row['userpass'];
-                    
+                          
                     $verify = password_verify($password, $hashpass);
                     if($verify){ 
                         $_SESSION['email'] = $row['email'];
                         $_SESSION['firstname'] = $row['firstname'];
                         $_SESSION['id'] = $row['id'];
-                        header("Location: ../user_landing.php");
+                        if($_SESSION['id'] == 1){
+                            header("Location: admin.php");
+                            exit();
+                        }else if($_SESSION['id'] == 2) {
+                            header("Location: order_tracker.php");
+                            exit();
+                        }else {
+                            header("Location: user_landing.php");
+                            exit();
+                        }         
                     }else{
                         header("Location: ../login.php?error=incorrect");
                         exit();

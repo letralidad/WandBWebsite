@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id'])){
+
+        header("Location: user_landing.php");
+    }else{?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -90,3 +96,5 @@
     <script src="app.js"></script>
 </body>
 </html>
+<?php
+    }?>

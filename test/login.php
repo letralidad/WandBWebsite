@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id'])){
+
+        header("Location: user_landing.php");
+    }else{?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,10 +35,8 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-    </nav>
-
-    <!-- Login form -->
-    <form action="include/loginprocess.php" method="post">
+    </nav> 
+<form action="include/loginprocess.php" method="post">
         <div class="contentBox">
         <?php
             if(isset($_GET['error'])){
@@ -73,3 +77,6 @@
     <script src="app.js"></script>
 </body>
 </html>
+<?php
+    }?>
+ 

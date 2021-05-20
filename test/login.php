@@ -1,8 +1,14 @@
 <?php
     session_start();
     if(isset($_SESSION['id'])){
-
-        header("Location: user_landing.php");
+        if($_SESSION['id'] == 1){
+            header("Location: admin.php");
+        }else if($_SESSION['id'] == 2) {
+            header("Location: incoming_tracker.php");
+        }else {
+            header("Location: user_landing.php");
+        }
+        exit();
     }else{?>
 <!DOCTYPE html>
 <html lang="en">

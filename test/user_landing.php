@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if(isset($_SESSION['id'])){
+
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,3 +63,9 @@
     <script src="app.js"></script>
 </body>
 </html>
+<?php
+    } else{
+        header("Location: login.php?=click");
+        exit();
+    }
+?>

@@ -32,7 +32,7 @@
                     $_SESSION['email'] = $row['email'];
                     $_SESSION['firsname'] = $row['firstname'];
                     $_SESSION['id'] = $row['id'];
-                    echo "login successfully";
+                    header("Location: ../user_landing.php");
                 }
             }
             else{

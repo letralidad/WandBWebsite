@@ -33,7 +33,9 @@ if(isset($_POST['signup'])){
             exit();
         } 
 
-        $sql = "INSERT INTO usertable(firstname,lastname,mobilenumber,address,email,userpass) VALUES('$firstname','$lastname','$mobilenumber','$address','$email','$password');";
+        $hashpass = password_hash($password, PASSWORD_DEFAULT);
+
+        $sql = "INSERT INTO usertable(firstname,lastname,mobilenumber,address,email,userpass) VALUES('$firstname','$lastname','$mobilenumber','$address','$email','$hashpass');";
         $result = mysqli_query($conn, $sql);
         if($result)
         {

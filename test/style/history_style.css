@@ -6,9 +6,9 @@
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 15%;
     background-color: #ffc530;
-    position: fixed;
+    position: absolute;
     height: 100%;
     overflow: auto;
     text-align: center;
@@ -46,7 +46,7 @@
 }
   
 div.content {
-    margin-left: 200px;
+    margin-left: 15%;
     padding: 10px 16px;
     height: auto;
   }
@@ -63,13 +63,8 @@ hr{
     padding: 1px;
     margin-bottom: 5px;
 }
-
-.content p{
-    font-size: 15px;
-    font-weight: 400;
-}
   
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
     .sidebar {
       width: 100%;
       height: auto;

@@ -8,6 +8,59 @@ body{
     background-color: #FFFCF5;
     font-family: 'Montserrat', sans-serif;
 }
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #ffc530;
+    position: absolute;
+    height: 360%;
+    overflow: auto;
+    text-align: center;
+  }
+
+.sidebar a {
+    display: block;
+    color: #FFFCF5;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+.sidebar h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffc530;
+    background-color: #111111;
+    padding: 16px;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #1111112a;
+    color: #FFFCF5;
+  }
+
+
+.sidebar .acc{
+  background-color: #1111112a;
+  color: #FFFCF5;
+}
+
+.menu{
+    /*padding: 0 10px 30px 10px;*/padding: 15px 35px 15px 35px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-gap: 10px 40px;
+    margin-left: 18%;
+    margin-right: 2%;
+    z-index: -1;
+}
 .menu{
     /*padding: 0 10px 30px 10px;*/padding: 15px 35px 15px 35px;
     display: grid;
@@ -115,7 +168,7 @@ textarea{
     font-weight: 500;
     letter-spacing: 1px;
 }
-.button_menu{
+.button_acc{
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 600;
@@ -131,8 +184,9 @@ textarea{
 
 .order{
     display: block;
-    width: 150px;
-    margin: auto;
+    width: 10%;
+    margin-left: 53%;
+    margin-right: 37%;
     text-align: center;
     background-color: #FF3030;
     color: #FFFCF5;
@@ -157,32 +211,28 @@ textarea{
     height: 5vh;
 }
 
-@media screen and (max-width:800px) {
-    .menu{
-        width: 100%;
-        padding: 5% 5% 5% 5%;
-        left: 0;
-        right:0;
-    }
-    .heading, .food-items{
-        margin: auto;
-        width: 70%;
-    }
-}
-@media screen and (max-width:411px) {
-    .inline {
-        margin: 0 10px;
-    }
-}
 
-@media screen and (max-width:414px) {
-    .inline {
-        margin: 0 10px;
+@media screen and (max-width: 1000px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
     }
-}
+    .sidebar h1{
+        font-size: 12px;
+    }
+    .sidebar a {
+        float: auto;
+        font-size: 12px;
+    }
+    div.content {
+        margin-left: 0;
+    }
+  }
 
-@media screen and (max-width:540px) {
-    .inline {
-        margin: 0 10px;
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
     }
-}
+  }

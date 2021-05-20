@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>W&B - Menu</title>
-    <link rel="stylesheet" type="text/css" href="style/nav_style.css">
+    <link rel="stylesheet" type="text/css" href="style/nav_s.css">
     <link rel="stylesheet" type="text/css" href="style/acc_menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/Logo.ico"/> 
@@ -20,9 +20,9 @@
 
         <ul class="nav-links">
             <li><a href="index.php">HOME</a></li>
-            <li><a href="menu.php"><button type="button" class="button_menu">MENU</button></a></li>
+            <li><a href="menu.php">MENU</a></li>
             <li><a href="about.php">ABOUT</a></li>
-            <li><a href="login.php">MY ACCOUNT</a></li>
+            <li><a href="login.php"><button type="button" class="button_acc">MY ACCOUNT</button></a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -31,8 +31,17 @@
         </div>
     </nav>
 
-    <!--MENU-->
+    <!--sidebar-->
+    <div class="sidebar">
+        <h1>Hi User!</h1>
+        <a class = "acc" href="acc_menu.php">Menu</a>
+        <a href="track_your_order.php">Track your order</a>
+        <a href="history_user.php">Order History</a>
+        <a href="acc_management.php">Account Management</a>
+        <a href="index.php">Logout</a>
+    </div>
 
+    <!--MENU-->
     <div class="menu">
         <div class="heading">
             <h1>Our Menu</h1>
@@ -46,9 +55,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
+                    <button class="btn">-</button>
                     <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2">-</button>
+                    <button class="btn2">+</button>
                 </div> 
             </div>
         </div>
@@ -62,9 +71,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
+                    <button class="btn">-</button>
                     <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2">-</button>
+                    <button class="btn2">+</button>
                 </div> 
             </div>
         </div>
@@ -78,9 +87,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
+                    <button class="btn">-</button>
                     <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2">-</button>
+                    <button class="btn2">+</button>
                 </div> 
             </div>
         </div>
@@ -94,9 +103,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
+                    <button class="btn">-</button>
                     <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2">-</button>
+                    <button class="btn2">+</button>
                 </div> 
             </div>
         </div>
@@ -110,9 +119,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
+                    <button class="btn">-</button>
                     <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2">-</button>
+                    <button class="btn2">+</button>
                 </div> 
             </div>
         </div>
@@ -126,14 +135,14 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
+                    <button class="btn">-</button>
                     <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2">-</button>
+                    <button class="btn2">+</button>
                 </div> 
             </div>
         </div>
     </div>
-    <a href="account.php" class="order">order now?</a>
+    <a href="account.php" class="order">add to cart</a>
     <div class="whitespace"></div>
 
     <script src="app.js"></script>

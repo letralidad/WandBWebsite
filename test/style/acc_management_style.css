@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #ffc530;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+  }
+
+.sidebar a {
+    display: block;
+    color: #FFFCF5;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+.sidebar h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffc530;
+    background-color: #111111;
+    padding: 16px;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #1111112a;
+    color: #FFFCF5;
+  }
+
+
+.sidebar .acc{
+  background-color: #1111112a;
+  color: #FFFCF5;
+}
+
+div.content {
+    margin-left: 15%;
+    padding: 10px 16px;
+    height: auto;
+  }
+
+.content h2{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+hr{
+    background-color: rgba(0, 0, 0, 0.116);
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+.contentBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 3%;
+}
+.contentBox .formBox
+{
+    width: 50%;
+    height: auto;
+}
+.textbx
+{
+    width: 100%;
+}
+.contentBox .formBox .textbx h2
+{
+    font-weight: 400;
+    font-size: 2.3em;
+    font-family: Montserrat;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+}
+.contentBox .formBox p
+{
+    font-weight:200;
+    margin-bottom: 20px;
+    font-family:Montserrat;
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding: 10px 10px;
+    letter-spacing: 1px;
+}
+
+.inputBox{
+    margin: 2% auto;
+}
+.contentBox .formBox .inputBox input
+{
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #E8E8E8;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-right:10%;
+}
+.ssBox
+{
+    margin-top: 20px;
+}
+::placeholder
+{
+    font-style:italic;
+    color: #acacac;
+    padding-left: 10px;
+}
+.ssBox button
+{
+   width:50%;
+   margin-right:25%;
+   margin-left:25%;
+   margin-bottom: 10px;
+   padding: 10px 10px;
+   border: none;
+   background-color:#ffc530;
+   border-radius: 15px;
+}
+.ssBox button:hover
+{
+   width:50%;
+   margin-right:19%;
+   margin-bottom: 10px;
+   padding: 10px 10px;
+   border: none;
+   background-color:#fcd062;
+   border-radius: 15px;
+}
+
+
+label {
+    display: inline-block;
+	text-align: left;
+    width: 80%;;
+    background-color:  #E8E8E8;
+    color: #acacac;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-style:italic;
+    font-size: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+@media screen and (max-width:450px) {
+    .contentBox .formBox
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar h1{
+        font-size: 12px;
+    }
+    .sidebar a {
+        float: auto;
+        font-size: 12px;
+    }
+    div.content {
+        margin-left: 0;
+    }
+  }
+  
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+
+.button_account{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;;
+    border: solid 2px #111111;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 1px 5px 1px 5px;
+    color: #ffc530;
+    box-shadow: 1px 3px #00000036;
+}

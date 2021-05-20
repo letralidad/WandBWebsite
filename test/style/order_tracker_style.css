@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #ffc530;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #FFFCF5;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+  } 
+  
+  .sidebar h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffc530;
+    background-color: #111111;
+    padding: 16px;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgba(85, 85, 85, 0.616);
+    color: #FFFCF5;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 10px 16px;
+    height: auto;
+  }
+  
+  .col{
+      float: right;
+      width: 100%;
+      margin: 15% 17% 0 auto;
+  }
+  
+  .col h1{
+      text-align: right;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 55px;
+      font-weight: 800;
+      color: #111111;
+  }
+  
+  .col h2{
+      text-align: right;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: .5em;
+      color: #111111;
+  }
+  .chicken{
+    position: absolute;
+    z-index: -1;
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 6%;
+    margin-right: 55%;
+  }
+  
+  .chicken img{
+    width: 100%;
+    opacity: 50%;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar h1{
+        font-size: 12px;
+    }
+    .sidebar a {
+        float: auto;
+        font-size: 12px;
+    }
+    div.content {
+        margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
+  @media screen and (max-width: 1075px){
+  .col {
+    width: 60%;
+    margin-top: 20%;
+    margin-right: 18%;
+    margin-left: 22%;
+  }
+  .col h1{
+    font-size: 45px;
+  }
+  .chicken {
+    width: 35%;
+    margin-left: 3%;
+    margin-top: 9%;
+    margin-right: 62%;
+  }
+  .chicken img{
+    width: 110%;
+  }
+  }
+  @media screen and (max-width: 877px){
+  .col h1{
+    font-size: 40px;
+  }
+  .col h2{
+    font-size: 18px;
+  }
+  .col {
+    width: 60%;
+    margin-top: 26%;
+    margin-right: 14%;
+    margin-left: 26%;
+  }
+  .chicken {
+    width: 35%;
+    margin-left: 3%;
+    margin-top: 10%;
+    margin-right: 62%;
+  }
+  .chicken img {
+    width: 130%;
+  }
+  }
+  @media screen and (max-width: 807px){
+  .col{
+    width: 80%;
+    margin-top: 26%;
+    margin-right: 14%;
+    margin-left: 6%;
+  }
+  }
+  
+  @media screen and (max-width: 624px){
+  .col{
+    width: 80%;
+    margin-top: 26%;
+    margin-right: 14%;
+    margin-left: 6%;
+    }
+    .col h1{
+      font-size: 30px;
+    }
+    .col h2{
+      font-size: 15px;
+    }
+    .chicken{
+      width: 30%;
+      width: 35%;
+      margin-left: 3%;
+      margin-top: 17%;
+      margin-right: 62%;
+    }
+  }
+  @media screen and (max-width: 320px){
+  .col h1{
+    font-size: 25px;
+  }
+  .col h2{
+    font-size: 10px;
+  }
+  }
+  
+  @media screen and (max-width: 280px){
+  .col h1{
+    font-size: 20px;
+  }
+  .col h2{
+    font-size: 8px;
+  }
+  }
+  
+  .button_account{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;;
+    border: solid 2px #111111;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 1px 5px 1px 5px;
+    color: #ffc530;
+    box-shadow: 1px 3px #00000036;
+  }
+  

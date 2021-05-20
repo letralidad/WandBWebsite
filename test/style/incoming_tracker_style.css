@@ -13,15 +13,7 @@
   overflow: auto;
   text-align: center;
 }
-.sidebar h1{
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #ffc530;
-  background-color: #111111;
-  padding: 16px;
-}
+
 .sidebar a {
   display: block;
   color: #FFFCF5;
@@ -32,15 +24,25 @@
   font-weight: 600;
   font-size: 15px;
 }
+.sidebar h1{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffc530;
+  background-color: #111111;
+  padding: 16px;
+}
 
 .sidebar a:hover:not(.active) {
   background-color: #1111112a;
   color: #FFFCF5;
 }
 
-.sidebar .incoming_tracker{
-  background-color: #1111112a;
-  color: #FFFCF5;
+
+.sidebar .incoming{
+background-color: #1111112a;
+color: #FFFCF5;
 }
 
 div.content {
@@ -48,6 +50,7 @@ div.content {
   padding: 10px 16px;
   height: auto;
 }
+
 .content h2{
   font-size: 25px;
   font-weight: 600;
@@ -55,6 +58,7 @@ div.content {
   padding: 15px 0;
   text-align: center;
 }
+
 hr{
   background-color: rgba(0, 0, 0, 0.116);
   padding: 1px;

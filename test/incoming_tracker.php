@@ -39,6 +39,7 @@
         <a href="history_tracker.php">History of Orders</a>
         <a href="index.php">Logout</a>
     </div>
+    
     <!--content-->
     <div class="content">
         <h2>Tracking Order</h2><hr>

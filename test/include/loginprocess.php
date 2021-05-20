@@ -12,8 +12,8 @@
             return $data;
         }
 
-        $email = charvalidation($_POST['email']);
-        $password = charvalidation($_POST['password']);
+        $email =charvalidation($_POST['email']);
+        $password =charvalidation($_POST['password']);
 
         if(empty($email)){
             header("Location: ../login.php?error=email");

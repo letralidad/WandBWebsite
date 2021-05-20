@@ -103,7 +103,7 @@
             </div>
         </div>
     </div>
-    <a href="account.php" class="order">order now?</a>
+    <a href="acc_menu.php" class="order">order now?</a>
     <div class="whitespace"></div>
 
     <script src="app.js"></script>

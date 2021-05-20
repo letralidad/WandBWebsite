@@ -38,6 +38,7 @@ if(isset($_POST['signup'])){
         if($result)
         {
             echo "<script>alert('Record has been saved!');</script>";
+            header("Location: ../login.php");
         }
 }
 else{

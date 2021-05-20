@@ -47,7 +47,7 @@
     
     <!--content-->
     <div class="content">
-        <h2>Tracking Order</h2><hr>
+        <h2>History of Orders</h2><hr>
 
         <!--Content of Table-->
         <?php 

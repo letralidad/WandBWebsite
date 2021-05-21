@@ -42,7 +42,7 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-    </nav>
+    </nav> 
     <!--alert-->
     <?php
             if(isset($_GET['error'])){

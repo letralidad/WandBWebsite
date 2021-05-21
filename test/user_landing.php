@@ -69,7 +69,8 @@ else if($_SESSION['id'] > 2){
 
         <div class="account_management">
             <h3>Manage your account</h3>
-            <a href="acc_management.php"><h4>manage here &#8594;</h4></a>
+            <a href="include/get-user-account.php""><h4>manage here &#8594;</h4></a>
+            
         </div>
     </div>
     <script src="app.js"></script>

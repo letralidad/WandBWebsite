@@ -1,3 +1,20 @@
+<?php
+session_start();
+if(empty($_SESSION['id'])){
+    header("Location: login.php?error=login");
+    exit();
+}
+else if($_SESSION['id'] == 1){
+    header("Location: admin.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] == 2){
+    header("Location: order_tracker.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] > 2){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +54,7 @@
         <a href="acc_menu.php">Menu</a>
         <a class = "track" href="track_your_order.php">Track your order</a>
         <a href="history_user.php">Order History</a>
-        <a href="acc_management.php">Account Management</a>
+        <a class = "acc" href="include/get-user-account.php">Account Management</a>
         <a href="include/logout.php">Logout</a>
     </div>
 
@@ -50,3 +67,12 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<?php
+}
+else{
+    header("Location: login.php?error=login");
+    exit();
+}
+?>
+

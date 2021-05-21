@@ -1,3 +1,20 @@
+<?php
+session_start();
+if(empty($_SESSION['id'])){
+    header("Location: login.php?error=click");
+    exit();
+}
+else if($_SESSION['id'] == 1){
+    header("Location: admin.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] == 2){
+    header("Location: order_tracker.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] > 2){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,9 +63,10 @@
     <div class="content">
         <h2>Order History</h2><hr>
         
-        <?php 
+        <?php
+            $contain = intval($_SESSION['id']);
             include "include/dbcon.php";
-            $result = $dbOrdersconn->query("SELECT * from history WHERE userordered=$_SESSION['id']") or die($dbOrdersconn->error);
+            $result = $dbOrdersconn->query("SELECT * from history WHERE userordered=$contain") or die($dbOrdersconn->error);
         ?>
         
         <div class="table">
@@ -69,8 +87,6 @@
                             <td><?php echo $row['ordernum']; ?></td>
                             <td><?php echo $row['orderdate']; ?></td>
                             <td><?php echo $row['totalprice']; ?></td>
-                            <td><?php echo $row['userordered']; ?></td>
-                            <td><?php echo $row['orderstatus']; ?></td>
                         </tr>
 
                 
@@ -95,3 +111,11 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<?php
+}
+else{
+    header("Location: login.php?error=login");
+    exit();
+}
+?>

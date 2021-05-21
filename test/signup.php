@@ -38,33 +38,54 @@
     </nav>
     <!-- sign up form -->
     <?php require "include/dbcon.php";?>
-    <div  class="contentBox">
-        <?php
+    <?php
             if(isset($_GET['error'])){
                 $error = $_GET['error'];
                 if($error == 'firstname'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'lastname'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'mobile number'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'address'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'email'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'password'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'click'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
                 }
             }
         ?>
+    <div  class="contentBox">
         <form action="include/proccess.php" method="post" class="formBox">
             <div class="textbx">
                 <h2>Sign Up</h2>

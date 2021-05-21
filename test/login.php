@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/Logo.ico"/> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 
 </head>
 <body>
@@ -41,26 +42,40 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-    </nav> 
-<form action="include/loginprocess.php" method="post">
-        <div class="contentBox">
-        <?php
+    </nav>
+    <!--alert-->
+    <?php
             if(isset($_GET['error'])){
                 $error = $_GET['error'];
                 if($error == 'email'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Email field is required!</p>
+                            </div>
+                        ';
                 }
                 elseif($error == 'password'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Password field is required!</p>
+                        </div>
+                    ';
                 }
                 elseif($error == 'click'){
-                    echo "<script>alert('Enter all the required fields');</script>";
+                    echo '<div class="alert">
+                            <p>Please enter all the required fields!</p>
+                        </div>
+                    ';
                 }
                 elseif($error == 'incorrect'){
-                    echo "<script>alert('Username or password are invalid');</script>";
+                    echo '<div class="alert">
+                            <p>Email or password are invalid!</p>
+                        </div>
+                    ';
                 }
             }
         ?>
+    <!-- Login form -->
+    <form action="include/loginprocess.php" method="post">
+        <div class="contentBox">
             <div class="formBox">
                 <h2>Welcome</h2>
                 <p>Log in now to find the best deals in town</p>

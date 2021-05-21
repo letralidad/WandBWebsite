@@ -57,10 +57,6 @@ else if($_SESSION['id'] > 2){
         <a class = "acc" href="include/get-user-account.php">Account Management</a>
         <a href="include/logout.php">Logout</a>
     </div>
-
-    <?php
-        session_start();
-    ?>
     <!--content-->
     <div class="content">
         <h2>Manage your account</h2><hr>

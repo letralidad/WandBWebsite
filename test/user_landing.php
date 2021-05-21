@@ -1,8 +1,18 @@
-<?php 
-    session_start();
-    if(isset($_SESSION['id'])){
-
-    
+<?php
+session_start();
+if(empty($_SESSION['id'])){
+    header("Location: login.php?error=click");
+    exit();
+}
+else if($_SESSION['id'] == 1){
+    header("Location: admin.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] == 2){
+    header("Location: order_tracker.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] > 2){
 ?>
 
 <!DOCTYPE html>
@@ -65,9 +75,11 @@
     <script src="app.js"></script>
 </body>
 </html>
+
 <?php
-    } else{
-        header("Location: login.php?=click");
-        exit();
-    }
+}
+else{
+    header("Location: login.php?error=click");
+    exit();
+}
 ?>

@@ -37,13 +37,13 @@
                         $_SESSION['firstname'] = $row['firstname'];
                         $_SESSION['id'] = $row['id'];
                         if($_SESSION['id'] == 1){
-                            header("Location: admin.php");
+                            header("Location: ../admin.php");
                             exit();
                         }else if($_SESSION['id'] == 2) {
-                            header("Location: order_tracker.php");
+                            header("Location: ../order_tracker.php");
                             exit();
                         }else {
-                            header("Location: user_landing.php");
+                            header("Location: ../user_landing.php");
                             exit();
                         }         
                     }else{

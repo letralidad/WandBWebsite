@@ -20,14 +20,19 @@
             $getId = mysqli_insert_id($conn);
             $tablename = "ac" . strval($id);
 
-                for($i = 0; $i < 6;)
+                for($i = 0; $i < 6;){
                 while($row = $result->fetch_assoc()){
                     $itemcode = $row['itemcode'];
                     $itemname = $row['itemname'];
                     $itemprice = $row['itemprice'];
-                    $amount = $itemprice * $qty_data[$i];    
+                    $amount = $itemprice * $qty_data[$i];
+    
                     $insertsql = $dbAddtoCartconn->query("INSERT INTO $tablename(itemcode,itemname,price,qty,amount) VALUES('$itemcode','$itemname','$itemprice','$qty_data[$i]','$amount')") or die($mysqli->error);
                     $i++;
                 }
+            }
+            //pakilagyan ordered successfuly
+            header("Location: ../index.php");
+            exit();
         }
     }

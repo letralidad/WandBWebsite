@@ -43,7 +43,7 @@
 
     <!--MENU-->
     
-    <form action="acc_menu_process.php">
+    <form action="include/acc_menu_process.php" method="get">
     <div class="menu">
         <div class="heading">
             <h1>Our Menu</h1>
@@ -57,9 +57,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
-                    <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2" >-</button>
+                    <button class="btn">-</button>
+                    <textarea name="ec1_qty" class="quantity"></textarea>
+                    <button class="btn2" >+</button>
                 </div> 
             </div>
         </div>
@@ -73,9 +73,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
-                    <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2" >-</button>
+                    <button class="btn">-</button>
+                    <textarea name="ec2_qty" class="quantity"></textarea>
+                    <button class="btn2" >+</button>
                 </div> 
             </div>
         </div>
@@ -89,9 +89,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
-                    <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2" >-</button>
+                    <button class="btn">-</button>
+                    <textarea name="ec3_qty" class="quantity"></textarea>
+                    <button class="btn2" >+</button>
                 </div> 
             </div>
         </div>
@@ -105,9 +105,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
-                    <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2" >-</button>
+                    <button class="btn">-</button>
+                    <textarea name="ec4_qty" class="quantity"></textarea>
+                    <button class="btn2" >+</button>
                 </div> 
             </div>
         </div>
@@ -121,9 +121,9 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
-                    <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2" >-</button>
+                    <button class="btn">-</button>
+                    <textarea name="ec5_qty" class="quantity"></textarea>
+                    <button class="btn2" >+</button>
                 </div> 
             </div>
         </div>
@@ -137,14 +137,14 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">+</button>
-                    <textarea name="text" class="quantity"></textarea>
-                    <button class="btn2" >-</button>
+                    <button class="btn">-</button>
+                    <textarea name="ec6_qty" class="quantity"></textarea>
+                    <button class="btn2" >+</button>
                 </div> 
             </div>
         </div>
     </div>
-    <button class="order">add to cart</button>
+    <button name="addtocart" class="order">add to cart</button>
     </form>
     <div class="whitespace"></div>
 

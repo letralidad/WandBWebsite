@@ -1,3 +1,15 @@
+<?php
+session_start();
+if(empty($_SESSION['id'])){
+    header("Location: login.php?error=login");
+    exit();
+}
+else if($_SESSION['id'] == 1){
+    header("Location: admin.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] == 2){?>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +52,11 @@
         <a class = "history_tracker"  href="history_tracker.php">History of Orders</a>
         <a href="include/logout.php">Logout</a>
     </div>
+
+    <div class="view-note">
+        <p ><i><b>Note: </b>Admin Panel is best in Desktop View</i></p>
+    </div>
+    
     <!--content-->
     <div class="content">
         <h2>History of Orders</h2><hr>
@@ -94,3 +111,15 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<?php
+}
+else if($_SESSION['id'] > 2){
+    header("Location: user_landing.php?error=restriction");
+    exit();
+}
+else{
+    header("Location: login.php?error=login");
+    exit();
+}
+?>

@@ -1,3 +1,15 @@
+<?php
+session_start();
+if(empty($_SESSION['id'])){
+    header("Location: login.php?error=login");
+    exit();
+}
+else if($_SESSION['id'] == 1){
+    header("Location: admin.php?error=restriction");
+    exit();
+}
+else if($_SESSION['id'] == 2){?>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,3 +65,15 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<?php
+}
+else if($_SESSION['id'] > 2){
+    header("Location: user_landing.php?error=restriction");
+    exit();
+}
+else{
+    header("Location: login.php?error=login");
+    exit();
+}
+?>

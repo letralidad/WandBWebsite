@@ -61,6 +61,33 @@ hr{
     padding: 1px;
     margin-bottom: 5px;
 }
+td a{
+  text-decoration: none;
+  padding: 5px;
+  color: #FFFCF5;
+  border-radius: 3px;
+}
+
+td .kitchen-buton{
+  background-color: rgb(72, 115, 145);
+}
+.kitchen-buton:hover:not(.active) {
+  background-color:rgb(52, 95, 126);
+}
+
+td .transit-button{
+  background-color: rgb(219, 124, 60);
+}
+.transit-button:hover:not(.active) {
+  background-color:rgb(206, 107, 41);
+}
+
+td .completed-button{
+  background-color: rgb(70, 138, 61);
+}
+.completed-button:hover:not(.active) {
+  background-color:rgb(48, 117, 38);
+}
   
 @media screen and (max-width: 1000px) {
     .sidebar {

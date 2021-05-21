@@ -1,5 +1,13 @@
 <?php
     require "dbcon.php";
+    $ordernum = '';
+    $result ='';
+    $row = '';
+    $orderdate = '';
+    $totalprice = '';
+    $userordered = '';
+    $orderstatus = '';
+
 
     if (isset($_GET['accept'])){
         $ordernum = $_GET['accept'];

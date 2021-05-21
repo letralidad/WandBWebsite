@@ -45,16 +45,11 @@
     <!--content-->
     <div class="content">
         <h2>Order History</h2><hr>
-    <?php 
+        
+        <?php 
             include "include/dbcon.php";
-            $result = $dbOrdersconn->query("SELECT * from history") or die($dbOrdersconn->error);
+            $result = $dbOrdersconn->query("SELECT * from history WHERE userordered=$_SESSION['id']") or die($dbOrdersconn->error);
         ?>
-
-<?php 
-            include "include/dbcon.php";
-            $result = $dbOrdersconn->query("SELECT * from history") or die($dbOrdersconn->error);
-        ?>
-
         
         <div class="table">
             <table class="table-content">

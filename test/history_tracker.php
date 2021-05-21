@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>W&B - History of Order</title>
     <link rel="stylesheet" type="text/css" href="style/history_tracker_style.css">
+    <link rel="stylesheet" type="text/css" href="style/table-design.css">
     <link rel="stylesheet" type="text/css" href="style/nav_s.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" href="img/Logo.ico"/> 
@@ -42,7 +43,51 @@
     <!--content-->
     <div class="content">
         <h2>History of Orders</h2><hr>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <!--Content of Table-->
+        <?php 
+            include "include/dbcon.php";
+            $result = $dbOrdersconn->query("SELECT * from history") or die($dbOrdersconn->error);
+        ?>
+
+        
+        <div class="table">
+            <table class="table-content">
+                <thead>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Date of Order</th>
+                        <th>Total Price</th>
+                        <th>User Ordered</th>
+                    </tr>
+                </thead>
+
+            <?php 
+                if ($result->num_rows > 0){
+                    
+                    while($row=$result->fetch_assoc()): ?>
+                        <tr>
+                            <td><?php echo $row['ordernum']; ?></td>
+                            <td><?php echo $row['orderdate']; ?></td>
+                            <td><?php echo $row['totalprice']; ?></td>
+                            <td><?php echo $row['userordered']; ?></td>
+                        </tr>
+
+                
+            <?php
+                    endwhile; 
+                }else{?>
+                        <tr>
+                            <td colspan=4 style="font-size:20px; height: 90px;">
+                                <i>
+                                    No completed order yet?!
+                                <i>
+                            </td>
+                        </tr>
+                <?php
+                }?>
+            
+            </table>
+        </div>
     </div>
 
 

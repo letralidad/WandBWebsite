@@ -41,6 +41,9 @@
         <a href="include/logout.php">Logout</a>
     </div>
 
+    <?php
+        session_start();
+    ?>
     <!--content-->
     <div class="content">
         <h2>Manage your account</h2><hr>
@@ -49,19 +52,19 @@
             <div class="textbx">
             </div>
             <div class="inputBox">
-                <input type="text" name="firstname" placeholder="firstname" require>
+                <input type="text" name="firstname" placeholder="firstname" value=<?php echo $_SESSION['firstname'] ?> require>
             </div>
             <div class="inputBox">
-                <input type="text" name="lastname" placeholder="lastname" require>
+                <input type="text" name="lastname" placeholder="lastname" value=<?php echo $_SESSION['lastname'] ?> require>
             </div>
             <div class="inputBox">
-                <input type="tel" name="mobilenumber" placeholder="mobilenumber" require>
+                <input type="tel" name="mobilenumber" placeholder="mobilenumber" value=<?php $_SESSION['mobilenumber']?> require>
             </div>
             <div class="inputBox">
-                <input type="text" name="address" placeholder="address" require>
+                <input type="text" name="address" placeholder="address" value=<?php echo $_SESSION['address'] ?> require>
             </div>
             <div class="inputBox">
-                <input type="email" name="email" placeholder="Email" require>
+                <input type="email" name="email" placeholder="Email" value=<?php echo $_SESSION['email']?> require>
             </div>
             <div class="inputBox">
                 <input type="password" name="password" placeholder="password" require>

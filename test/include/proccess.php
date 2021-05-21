@@ -4,7 +4,7 @@ if(isset($_POST['signup'])){
     $firstname  = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $mobilenumber = $_POST['mobilenumber'];
-    $address = $_POST['address'];
+    $address = str_replace(' ', '' , $_POST['address']);
     $email = $_POST['email'];
     $password = $_POST['password'];
 

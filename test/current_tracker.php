@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(empty($_SESSION['id'])){
-    header("Location: login.php?error=login");
+    header("Location: login.php?error=click");
     exit();
 }
 else if($_SESSION['id'] == 1){

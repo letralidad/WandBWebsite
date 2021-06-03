@@ -43,10 +43,10 @@ else if($_SESSION['id'] == 1){
 
     <!--Side bar-->
     <div class="sidebar">
-        <h1>Hi Admin!</h1>
+        <a href="admin.php">Hi Admin!</a>
         <a href="incoming_order.php">Incoming Order</a>
         <a href="current_order.php">Current Order</a>
-        <a class = "history"  href="history_order.php">History of Orders</a>
+        <h1 class = "history">History of Orders</h1>
         <a href="include/logout.php">Logout</a>
     </div>
     

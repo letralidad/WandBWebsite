@@ -39,7 +39,7 @@ else if($_SESSION['id'] == 1){
             <div class="line3"></div>
         </div>
     </nav>
-
+    
     <!--Side bar-->
     <div class="sidebar">
         <h1>Hi Admin!</h1>
@@ -50,16 +50,17 @@ else if($_SESSION['id'] == 1){
     </div>
 
     <!--content-->
-    <div class="content">
-        <div class="col">
-            <h1>WINGS & BEERS</h1>
-            <h2>CHICKEN JOINT</h2>
-        </div>
-        
-        <div class="chicken">
-            <img src="img/chicken.png" alt="chicken">
-        </div>
-    </div>
+                <!--original content
+                <div class="content">
+                    <div class="col">
+                        <h1>WINGS & BEERS</h1>
+                        <h2>CHICKEN JOINT</h2>
+                    </div>
+                    
+                    <div class="chicken">
+                        <img src="img/chicken.png" alt="chicken">
+                    </div>
+                </div>-->
 
     <script src="app.js"></script>
 </body>

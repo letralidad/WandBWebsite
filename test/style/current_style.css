@@ -24,7 +24,17 @@
     font-weight: 600;
     font-size: 15px;
   }
-  .sidebar h1{
+  .sidebar a:hover:not(.active) {
+    background-color: #1111112a;
+    color: #FFFCF5;
+  }
+  
+/*  
+  .sidebar .current{
+    color: #ffc530;
+    background-color: #111111;
+}*/
+.sidebar .current{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -32,18 +42,7 @@
     color: #ffc530;
     background-color: #111111;
     padding: 16px;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #1111112a;
-    color: #FFFCF5;
-  }
-  
-  
-  .sidebar .current{
-    background-color: #1111112a;
-    color: #FFFCF5;
-  }
+}
   
   div.content {
     margin-left: 15%;
@@ -70,7 +69,7 @@
       height: auto;
       position: relative;
     }
-    .sidebar h1{
+    .sidebar .current{
         font-size: 12px;
     }
     .sidebar a {

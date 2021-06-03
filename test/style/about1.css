@@ -99,6 +99,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 2;
     }
 
     .nav-links li{
@@ -137,10 +138,15 @@ nav{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 .col{
+    /*
 	flex-basis: 50%;
     margin-top: 5%;
     margin-right: 16%;
-    margin-left: 25%;
+    margin-left: 25%;*/
+    position: relative;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 4%;
 }
 
 h1{
@@ -162,8 +168,9 @@ h2{
 }
 
 p{
-    
+    width: 80%;
     margin-top: 7px;
+    margin-left: 20%;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -190,7 +197,7 @@ p{
         flex-basis: 50%;
         margin-top: 8%;
         margin-right: 13%;
-        margin-left: 20%;
+        margin-left: 8%;
     }
     .chicken{
         bottom: 30%;
@@ -200,18 +207,22 @@ p{
         margin-left: 10%;
         margin-top: 25%;
     }
+    p{
+        width: 90%;
+        margin-left: 10%;
+    }
 }
 
 @media screen and (max-width:768px) {
     .col{
-        flex-basis: 50%;
-        margin-top: 10%;
-        margin-right: 18%;
-        margin-left: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 12%;
     }
-    
     h1{
-        text-align: left;
+        text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 40px;
         font-weight: 800;
@@ -219,7 +230,8 @@ p{
     }
     
     h2{
-        text-align: left;
+        font-size: 18px;
+        text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 500;
@@ -229,7 +241,8 @@ p{
     }
     
     p{
-        
+        width: 71%;
+        margin: 0 auto;
         margin-top: 7px;
         text-align: justify;
         font-family: 'Montserrat', sans-serif;
@@ -245,6 +258,48 @@ p{
     .chicken img{
         width: 110%;
         opacity: 40%;
+    }
+}
+@media screen and (max-width:834px) {
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:552px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:430px) {
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:375px) {
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 10px;
     }
 }
 

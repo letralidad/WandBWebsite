@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #043446;
+}
+
+/*h2, p{
+    display: flex;
+    justify-content: center;
+    color: #fefefe;
+}*/
+
+.context{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.context img{
+    width: 8%;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fefefe;
+}
+p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fefefe;
+    margin-bottom: 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fefefe;
+    width: 500px;
+    height: 40vh;
+    border: 2px solid #fefefe;
+    box-shadow: 0.5px 8px #00000052;
+}
+/*
+.inputBox{
+    width: 400px;
+}*/
+
+input[type = "text"], input[type = "password"]{
+    width: 380px;
+    background-color: #fefefe;
+    border: solid 1.9px #707070;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+}
+
+input[type = "text"]:hover, 
+input[type = "password"]:hover{
+    border: solid 1.9px #ceb33b;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+.btn{
+    width: 400px;
+    background-color: #043446;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fefefe;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+@media screen and (max-width:800px) {
+    .context img{
+        width: 11%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        width: 300px;
+    }
+    .btn {
+        width: 270px;
+    }
+    input[type = "text"], 
+    input[type = "password"] {
+        width: 250px;
+        padding: 10px;
+    }
+    .context{
+        margin-top: 15%;
+    }
+    .context img{
+        width: 15%;
+    }
+    h2 {
+        font-size: 25px;    
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .context{
+        margin-top: 15%;
+    }
+    .context img{
+        width: 20%;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 10px;
+    }
+    .main {
+        width: 230px;
+    }
+    input[type = "text"], 
+    input[type = "password"] {
+        width: 180px;
+    }
+    .btn {
+        width: 200px;
+    }
+}

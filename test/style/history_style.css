@@ -24,7 +24,8 @@
     font-weight: 600;
     font-size: 15px;
   }
-.sidebar h1{
+
+.sidebar .history{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
@@ -39,11 +40,11 @@
     color: #FFFCF5;
   }
 
-
+/*
 .sidebar .history{
-  background-color: #1111112a;
-  color: #FFFCF5;
-}
+  background-color: #111111;
+  color: #ffc530;;
+}*/
   
 div.content {
     margin-left: 15%;
@@ -70,7 +71,7 @@ hr{
       height: auto;
       position: relative;
     }
-    .sidebar h1{
+    .sidebar .history{
         font-size: 12px;
     }
     .sidebar a {

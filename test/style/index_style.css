@@ -94,6 +94,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 2;
     }
 
     .nav-links li{
@@ -102,6 +103,9 @@ nav{
     .burger{
         display: block;
     }
+
+    
+
 }
 
 .nav-active{
@@ -130,9 +134,10 @@ nav{
 }
 
 .col{
-	flex-basis: 50%;
+    position: relative;
+    width: 60%;
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 16%;
 }
 
 h1{
@@ -160,6 +165,7 @@ h2{
     font-size: 13px;
     font-weight: 400 italic;
     box-shadow: 0px 3px#707070;
+    cursor: pointer;
 }
 
 .button2:hover{
@@ -167,6 +173,8 @@ h2{
 	color: #ffc530;
     font-weight: 500;
 }
+    
+
 
 .chicken{
     position: absolute;
@@ -176,7 +184,8 @@ h2{
 }
 
 .chicken img{
-    width: 130%;
+    width: 135%;
+    
 }
 
 @media screen and (max-width:1024px) {
@@ -184,51 +193,83 @@ h2{
         width: 60%;
     }
     .col{
-        margin-top: 10%;
-        margin-left: 9%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 30%;
+        margin-top: 6%;
     }
     .chicken{
-        bottom: 20%;
-        right: 13%;
+        bottom: 29%;
+        right: 16%;
     }
     .chicken img{
-        width: 110%;
+        width: 120%;
     }
+    h1{
+        font-size: 65px;
+    }
+    h2{
+        font-size: 22px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
     .col{
-        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     h1{
-        text-align: center; 
         font-size: 40px;
-        margin: 0 25px 0 0;
+        text-align: center;
     }
     h2{
+        font-size: 18px;
         text-align: center;
-        font-size: 20px;
-        letter-spacing: .5em;
-        margin-right: 10px;
     }
     .button2{
-        margin-top: 2%;
-        margin-left: 35%;
-        font-size: 11px;
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 10px 20px;
     }
     .chicken{
-        bottom: 20%;
-        right: 13%;
+        width: 59%;
+        display: flex;
+        justify-content: center;
+        margin-right: 4%;
+        margin-left: 37%;
+        z-index: -2;
     }
     .chicken img{
-        width: 110%;
-        opacity: 80%;
+        width: 140%;
+        z-index: -2;
     }
-    .button2:hover{
-        background-color: #111111;
-        color: #ffc530;
-        font-weight: 500;
-    }
-    
+}
 
+@media screen and (max-width:414px) {
+    .col{
+        margin-top: 25%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    .button2{
+        font-size: 10px;
+        margin-top: 5px;
+        padding: 8px 15px;
+    } 
 }

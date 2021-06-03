@@ -24,25 +24,24 @@
     font-weight: 600;
     font-size: 15px;
   }
-.sidebar h1{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 15px;
-    color: #ffc530;
-    background-color: #111111;
-    padding: 16px;
-}
-
 .sidebar a:hover:not(.active) {
     background-color: #1111112a;
     color: #FFFCF5;
   }
 
-
+/*
 .sidebar .incoming{
-  background-color: #1111112a;
-  color: #FFFCF5;
+  color: #ffc530;
+  background-color: #111111;
+}*/
+.sidebar .incoming{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffc530;
+  background-color: #111111;
+  padding: 16px;
 }
 
 div.content {
@@ -71,7 +70,7 @@ hr{
       height: auto;
       position: relative;
     }
-    .sidebar h1{
+    .sidebar .incoming{
         font-size: 12px;
     }
     .sidebar a {

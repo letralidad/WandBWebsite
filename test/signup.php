@@ -39,52 +39,58 @@
     <!-- sign up form -->
     <?php require "include/dbcon.php";?>
     <?php
-            if(isset($_GET['error'])){
-                $error = $_GET['error'];
-                if($error == 'firstname'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
-                elseif($error == 'lastname'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
-                elseif($error == 'mobile number'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
-                elseif($error == 'address'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
-                elseif($error == 'email'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
-                elseif($error == 'password'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
-                elseif($error == 'click'){
-                    echo '<div class="alert">
-                            <p>Enter all the required fields!</p>
-                            </div>
-                        ';
-                }
+        if(isset($_GET['error'])){
+            $error = $_GET['error'];
+            if($error == 'firstname'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
             }
-        ?>
+            elseif($error == 'lastname'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
+            }
+            elseif($error == 'mobile number'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
+            }
+            elseif($error == 'address'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
+            }
+            elseif($error == 'email'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
+            }
+            elseif($error == 'password'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
+            }
+            elseif($error == 'click'){
+                echo '<div class="alert">
+                        <p>Enter all the required fields!</p>
+                        </div>
+                    ';
+            }
+            elseif($error == 'email-taken'){
+                echo '<div class="alert">
+                        <p>Email is already registered!</p>
+                        </div>
+                    ';
+            }
+        }
+    ?>
     <div  class="contentBox">
         <form action="include/proccess.php" method="post" class="formBox">
             <div class="textbx">

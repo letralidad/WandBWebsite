@@ -57,40 +57,145 @@ else if($_SESSION['id'] > 2){
         <a class = "acc" href="include/get-user-account.php">Account Management</a>
         <a href="include/logout.php">Logout</a>
     </div>
+
     <!--content-->
+    
     <div class="content">
+        <?php
+            if(isset($_GET['status'])){
+                $status = $_GET['status'];
+                if($status == 'success'){
+                    echo '<div class="success">
+                            <p>Account Update Successfully!</p>
+                            </div>
+                        ';
+                }
+            }
+
+            if(isset($_GET['error'])){
+                $error = $_GET['error'];
+                if($error == 'firstname'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'lastname'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'mobile number'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'address'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'email'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'password'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'click'){
+                    echo '<div class="alert">
+                            <p>Enter all the required fields!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'email-taken'){
+                    echo '<div class="alert">
+                            <p>Email is already registered!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'file-extension'){
+                    echo '<div class="alert">
+                            <p>File is not an image!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'image-size'){
+                    echo '<div class="alert">
+                            <p>The size of the file is large!</p>
+                            </div>
+                        ';
+                }
+                elseif($error == 'file-upload'){
+                    echo '<div class="alert">
+                            <p>File upload error!</p>
+                            </div>
+                        ';
+                }
+            }
+        ?>
         <h2>Manage your account</h2><hr>
         <div  class="contentBox">
-        <form action="#" method="post" enctype = "multipart/form-data" class="formBox">
-            <div class="textbx">
-            </div>
-            <div class="inputBox">
-                <input type="text" name="firstname" placeholder="firstname" value=<?php echo $_SESSION['firstname'] ?> require>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="lastname" placeholder="lastname" value=<?php echo $_SESSION['lastname'] ?> require>
-            </div>
-            <div class="inputBox">
-                <input type="tel" name="mobilenumber" placeholder="mobilenumber" value=<?php $_SESSION['mobilenumber']?> require>
-            </div>
-            <div class="inputBox">
-                <input type="text" name="address" placeholder="address" value=<?php echo $_SESSION['address'] ?> require>
-            </div>
-            <div class="inputBox">
-                <input type="email" name="email" placeholder="Email" value=<?php echo $_SESSION['email']?> require>
-            </div>
-            <div class="inputBox">
-                <input type="password" name="password" placeholder="password" require>
-            </div>
-            <div class="inputBox">
-                <input type="file" name="profile" id = "actual-btn" require hidden/>
-                <label for="actual-btn">Upload your profile picture</label>
-            </div>
-            <div class="ssBox">
-            <a href="#"><button type="submit" name="save">save</button></a>
-            </div>
-        </form>
-    </div>
+            <form action="include/acc-management-upload.php" method="post" enctype = "multipart/form-data" class="formBox">
+                <div class="textbx">
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="firstname" placeholder="firstname" value="<?php echo $_SESSION['firstname'] ?>" require>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="lastname" placeholder="lastname" value="<?php echo $_SESSION['lastname'] ?>" require>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" name="mobilenumber" placeholder="mobilenumber" value="<?php echo $_SESSION['mobilenumber'] ?>" require>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="address" placeholder="address" value="<?php echo $_SESSION['address'] ?>" require>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" placeholder="Email" value="<?php echo $_SESSION['email']?>" require>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password" placeholder="password" require>
+                </div>
+                <div class="inputBox">
+                    <input type="file" name="profile" id = "actual-btn" hidden require>
+                    <label for="actual-btn" id="alt-button">
+                        <span id="choose-file">Upload your photo:</span>&nbsp;
+                        <span id="file-name">No file chosen yet!</span>  
+                    </label>
+
+                    <!--This is for the changing of text inside the upload-->
+                    <script type="text/javascript">
+                        const realFileButton = document.getElementById("actual-btn");
+                        const altFileButton = document.getElementById("alt-button");
+                        const textChooseFile = document.getElementById("choose-file");
+                        const textFileName = document.getElementById("file-name");
+
+                        realFileButton.addEventListener("change", function() {
+                            if (realFileButton.value) {
+                                textChooseFile.innerHTML = "File Uploaded:";
+                                textFileName.innerHTML = realFileButton.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                            } else {
+                                textChooseFile.innerHTML = "Upload your photo:";
+                                textFileName.innerHTML = "No file chosen yet!";
+                            }
+                        });
+                    </script>
+                    
+                </div>
+                <div class="ssBox">
+                    <button type="submit" name="save">Save</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="app.js"></script>

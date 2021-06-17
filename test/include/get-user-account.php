@@ -5,11 +5,20 @@
     $result = $conn->query("SELECT * FROM usertable WHERE id=$contain") or die($mysqli->error());
 
     $row = $result->fetch_array();
-    $_SESSION['firstname'] = $row['firstname'];
-    $_SESSION['lastname'] = $row['lastname'];
+    $_SESSION['firstname'] = str_replace('^', ' ' , $row['firstname']);
+    $_SESSION['lastname'] = str_replace('^', ' ' , $row['lastname']);
     $_SESSION['mobilenumber'] = $row['mobilenumber'];
-    $_SESSION['address'] = $row['address'];
+    $_SESSION['address'] = str_replace('^', ' ' , $row['address']);
     $_SESSION['email'] = $row['email'];
 
-    header('Location: ../acc_management.php');
+    if(isset($_GET['status'])){
+        $status = $_GET['status'];
+        if($status == 'success'){
+            header("Location: ../acc_management.php?status=success");
+        }
+    } else {
+        header('Location: ../acc_management.php');
+    }
+
+    
 ?>

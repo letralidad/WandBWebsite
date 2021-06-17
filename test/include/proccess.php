@@ -1,10 +1,10 @@
 <?php
     require "dbcon.php";
 if(isset($_POST['signup'])){
-    $firstname  = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
+    $firstname  = str_replace(' ', '^' , $_POST['firstname']);
+    $lastname = str_replace(' ', '^' , $_POST['lastname']);
     $mobilenumber = $_POST['mobilenumber'];
-    $address = str_replace(' ', '' , $_POST['address']);
+    $address = str_replace(' ', '^' , $_POST['address']);
     $email = $_POST['email'];
     $password = $_POST['password'];
 
@@ -32,6 +32,13 @@ if(isset($_POST['signup'])){
             header("Location: ../signup.php?error=password");
             exit();
         } 
+        $emailquery = "SELECT * FROM usertable WHERE email='$email'";
+        $emailresult = mysqli_query($conn, $emailquery);
+        if (mysqli_num_rows($emailresult) > 0) {
+            header("Location: ../signup.php?error=email-taken");
+            exit();
+        }
+
         $hashpass = password_hash($password, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO usertable(firstname,lastname,mobilenumber,address,email,userpass) VALUES('$firstname','$lastname','$mobilenumber','$address','$email','$hashpass');";

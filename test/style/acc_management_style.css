@@ -173,6 +173,14 @@ label {
     border-radius: 15px;
     cursor: pointer;
 }
+#choose-file{
+    background-color: #ffc530;
+    color: #FFFCF5;
+    z-index:1;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+}
 @media screen and (max-width:450px) {
     .contentBox .formBox
     {
@@ -219,4 +227,50 @@ label {
     padding: 1px 5px 1px 5px;
     color: #ffc530;
     box-shadow: 1px 3px #00000036;
+}
+@keyframes alert_lert{
+	from{
+		background-color: #FF3030;
+	}
+	to{
+		background-color: #ff6161;
+	}
+}
+.alert{
+    padding: 10px;
+    background-color: #FF3030;
+    animation-name: alert_lert;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+.alert p{
+    color: #FFFCF5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+@keyframes alert_stat{
+	from{
+		background-color: #057236;
+	}
+	to{
+		background-color: #2b9259;
+	}
+}
+.success{
+    padding: 10px;
+    background-color: #057236;
+    animation-name: alert_stat;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+.success p{
+    color: #FFFCF5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
 }

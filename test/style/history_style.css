@@ -103,3 +103,49 @@ hr{
     color: #ffc530;
     box-shadow: 1px 3px #00000036;
 }
+
+/**for buttons only**/
+.imp-exp
+{
+    margin-top: 20px;
+}
+.imp-exp label
+{
+   margin-left: 19%;
+   margin-bottom: 10px;
+   padding: 10px 50px;
+   border: none;
+   background-color: #020202;
+   border-radius: 15px;
+   color:white;
+}
+.imp-exp label:hover
+{
+   margin-left: 19%;
+   margin-bottom: 10px;
+   padding: 10px 50px;
+   border: none;
+   background-color: #474646;
+   border-radius: 15px;
+   color:white;
+}
+.imp-exp .exp
+{ 
+   
+   margin-right:19%;
+   margin-bottom: 10px;
+   padding: 10px 50px;
+   border: none;
+   background-color:#ffc530;
+   border-radius: 15px;
+}
+.imp-exp .exp:hover
+{
+   
+   margin-right:19%;
+   margin-bottom: 10px;
+   padding: 10px 50px;
+   border: none;
+   background-color:#fcd062;
+   border-radius: 15px;
+}

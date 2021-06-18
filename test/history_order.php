@@ -101,9 +101,20 @@ else if($_SESSION['id'] == 1){
                             </td>
                         </tr>
                 <?php
-                }?>
+                }
+                
+                ?>
             
             </table>
+        </div>
+        <div class="imp-exp">
+            <form action="include/import-export.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="profile" id = "actual-btn" class="imp" onchange="document.getElementById('import').click()" hidden require>
+                    <label for="actual-btn" id="alt-button">Import</label>
+                <button type="submit" name="import" class="imp" id="import" style="display: none;">Import</button>
+                <button type="submit" name="export" class="exp">Export</button>
+            </form>
+
         </div>
     </div>
 

@@ -16,7 +16,7 @@
             $result = $dbAddtoCartconn->query("SELECT * FROM items") or die($mysqli->error);
             $id = $_SESSION['id'];
             
-            //$resula = $conn->query("SELECT * FROM usertable") or die($mysqli->error);
+        
             $getId = mysqli_insert_id($conn);
             $tablename = "ac" . strval($id);
 

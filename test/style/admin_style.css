@@ -45,6 +45,12 @@
     padding: 10px 16px;
     height: auto;
   }
+
+  .content #bar-chart, #line-chart, #pie-chart{
+    width: 100%;
+    box-shadow: 2px 2px 5px #8f8f8f;
+    margin-bottom: 5px;
+  }
   
   .col{
       float: right;

@@ -49,18 +49,28 @@ else if($_SESSION['id'] == 1){
         <a href="include/logout.php">Logout</a>
     </div>
 
-    <!--content-->
-                <!--original content
-                <div class="content">
-                    <div class="col">
-                        <h1>WINGS & BEERS</h1>
-                        <h2>CHICKEN JOINT</h2>
-                    </div>
-                    
-                    <div class="chicken">
-                        <img src="img/chicken.png" alt="chicken">
-                    </div>
-                </div>-->
+    <!--content-->   
+    <div class="content">
+        <div class="card">
+            <canvas id="bar-chart">
+            </canvas>
+        </div>
+
+        <div class="card">
+            <canvas id="line-chart">
+            </canvas>
+        </div>
+
+        <div class="card">
+            <canvas id="pie-chart">
+            </canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+    <script src="graphs/bar-graph.js"></script>
+    <script src="graphs/line-graph.js"></script>
+    <script src="graphs/pie-graph.js"></script>
 
     <script src="app.js"></script>
 </body>

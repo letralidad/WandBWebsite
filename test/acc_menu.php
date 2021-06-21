@@ -60,7 +60,7 @@ else if($_SESSION['id'] > 2){
 
     <!--MENU-->
     
-    <!--<form action="include/acc_menu_process.php" method="get"> -->
+    <form action="include/acc_menu_process.php" method="get">
     <div class="menu">
         <div class="heading">
             <h1>Our Menu</h1>
@@ -74,9 +74,9 @@ else if($_SESSION['id'] > 2){
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">-</button>
-                    <input type="text" name="qty" id="1" class="quantity" value="0">
-                    <button class="btn2">+</button>
+                    <button class="btn" type="button">-</button>
+                    <input type="text" name="ec1_qty" id="1" class="quantity" value="0">
+                    <button class="btn2" type="button">+</button>
                 </div> 
             </div>
         </div>
@@ -90,9 +90,9 @@ else if($_SESSION['id'] > 2){
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">-</button>
-                    <input type="text" name="qty" id="2" class="quantity" value="0">
-                    <button class="btn2">+</button>
+                    <button class="btn" type="button">-</button>
+                    <input type="text" name="ec2_qty" id="2" class="quantity" value="0">
+                    <button class="btn2" type="button">+</button>
                 </div> 
             </div>
         </div>
@@ -106,9 +106,9 @@ else if($_SESSION['id'] > 2){
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">-</button>
-                    <input type="text" name="qty" id="3" class="quantity" value="0">
-                    <button class="btn2" >+</button>
+                    <button class="btn" type="button">-</button>
+                    <input type="text" name="ec3_qty" id="3" class="quantity" value="0">
+                    <button class="btn2" type="button">+</button>
                 </div> 
             </div>
         </div>
@@ -122,9 +122,9 @@ else if($_SESSION['id'] > 2){
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">-</button>
-                    <input type="text" name="qty" id="4" class="quantity" value="0">
-                    <button class="btn2">+</button>
+                    <button class="btn" type="button">-</button>
+                    <input type="text" name="ec4_qty" id="4" class="quantity" value="0">
+                    <button class="btn2" type="button">+</button>
                 </div> 
             </div>
         </div>
@@ -138,9 +138,9 @@ else if($_SESSION['id'] > 2){
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">-</button>
-                    <input type="text" name="qty" id="5" class="quantity" value="0">
-                    <button class="btn2" >+</button>
+                    <button class="btn" type="button">-</button>
+                    <input type="text" name="ec5_qty" id="5" class="quantity" value="0">
+                    <button class="btn2" type="button" >+</button>
                 </div> 
             </div>
         </div>
@@ -154,15 +154,15 @@ else if($_SESSION['id'] > 2){
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div class="inline">
-                    <button class="btn">-</button>
-                    <input type="text" name="qty" id="6" class="quantity" value="0">
-                    <button class="btn2" >+</button>
+                    <button class="btn" type="button">-</button>
+                    <input type="text" name="ec6_qty" id="6" class="quantity" value="0">
+                    <button class="btn2" type="button">+</button>
                 </div> 
             </div>
         </div>
     </div>
     <button name="addtocart" class="order">add to cart</button>
-    <!--</form> -->
+    </form>
     <div class="whitespace"></div>
     <script src="acc_menu.js"></script>
     <script src="app.js"></script>

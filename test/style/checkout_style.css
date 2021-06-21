@@ -72,12 +72,17 @@ hr{
     padding: 1px;
     margin-bottom: 5px;
 }
+.totalprice{
+    margin-top: 10px;
+    text-align: center;
+    display:block;
+}
 .btn{
     display: block;
     width: 20%;
     margin-left: 40%;
     margin-right: 40%;
-    margin-top: 3%;
+    margin-top: 10px;
     text-align: center;
     background-color: #FF3030;
     color: #FFFCF5;
